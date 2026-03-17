@@ -1,0 +1,25 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to Petrol Price add-on",
+        "description": "Enter the add-on Web UI (ingress) URL. Find it in the add-on panel after installing the Petrol Price add-on.",
+        "data": {
+          "api_base_url": "Add-on API URL",
+          "scan_interval_hours": "Scan interval (hours)"
+        }
+      },
+      "init": {
+        "title": "Options",
+        "data": {
+          "scan_interval_hours": "Scan interval (hours)"
+        }
+      }
+    },
+    "error": {
+      "api_url_required": "Please enter the add-on API URL",
+      "cannot_connect": "Could not connect to the add-on. Check the URL and that the add-on is running."
+    },
+    "abort": {}
+  }
+}

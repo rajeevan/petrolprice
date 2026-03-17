@@ -1,0 +1,20 @@
+# https://developers.home-assistant.io/docs/add-ons/configuration
+name: Petrol Price
+version: "1.0.0"
+slug: petrolprice
+description: Fetches fuel price board images from a URL, parses them with OCR, and exposes prices via HTTP API for the Petrol Price integration.
+url: ""
+arch:
+  - aarch64
+  - amd64
+init: false
+ingress: true
+map:
+  - share:rw
+options:
+  image_url: ""
+  scan_interval_hours: 6
+schema:
+  image_url: "str"
+  scan_interval_hours: "float?"
+image: "ghcr.io/home-assistant/{arch}-addon-petrolprice"
