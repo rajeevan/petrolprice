@@ -17,4 +17,4 @@ options:
 schema:
   image_url: "str"
   scan_interval_hours: "float?"
-image: "ghcr.io/home-assistant/{arch}-addon-petrolprice"
+image: "ghcr.io/GITHUB_REPO_OWNER/{arch}-addon-petrolprice"

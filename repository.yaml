@@ -1,0 +1,4 @@
+# https://developers.home-assistant.io/docs/add-ons/repository
+name: Petrol Price Add-on
+url: "https://github.com/rajeevan/PetrolPrice"
+maintainer: Rajeevan
