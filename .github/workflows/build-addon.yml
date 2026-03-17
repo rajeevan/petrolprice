@@ -31,10 +31,18 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Build and push add-on
+      - name: Build and push add-on (amd64)
         uses: home-assistant/builder@2026.03.0
         with:
           args: |
-            --all
+            --amd64
+            --target petrolprice
+            --docker-hub ghcr.io/${{ github.repository_owner }}
+
+      - name: Build and push add-on (aarch64)
+        uses: home-assistant/builder@2026.03.0
+        with:
+          args: |
+            --aarch64
             --target petrolprice
             --docker-hub ghcr.io/${{ github.repository_owner }}
